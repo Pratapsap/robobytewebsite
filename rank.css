@@ -1,0 +1,249 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+nav{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-gap: 8rem;
+  padding: 1% 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+    text-align: right;
+    margin-right: 0%;
+}   
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 19px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgb(61, 45, 45);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.nav-logo img{
+    width: 230px;
+    height: 50px ;
+}
+.text-box{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(photo/robo.jpg);
+    width: 100%;
+    min-height: 40vh;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.title{
+    color: #fff;
+    padding: 100px;
+}
+  .title h1{
+    font-size: 60px;
+    font-family: 'Cantarell', sans-serif;
+    font-weight: bolder;
+}
+.more{
+    width: 80%;
+    min-height: 10vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+  .icon .fas{
+    font-size: 50px;
+}
+  .icon a{
+    color: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    padding: 5px;
+    margin-bottom: 3rem;
+}
+.icon a:hover{
+    color: red;
+}
+.date{
+  margin-top: 2rem;
+}
+.date h4{
+  margin-left: 5rem;
+  color: gray;
+}
+.date p{
+  margin-left: 5rem;
+  margin-top: 5px;
+  color: gray;
+}
+/*-------------all section----------------------*/
+.all{
+    width: 80%;
+    min-height: 10vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 2rem;
+}
+.see{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 1rem;
+}
+.photo{
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.photo img{
+    height: 200px;
+    width: 100%;
+    display: block;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+.photo a {
+    text-align: center;
+    color:black;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+.photo p{
+    margin-top: 1rem;
+}
+.photo:hover{
+    box-shadow:0px 16px 24px 2px rgba(0,0,0,0.14) , 0px 6px 30px 5px rgba(0,0,0,0.12) , 0px 8px 10px -7px rgba(0,0,0,0.2) ;                               
+    border-radius: 5px;
+}
+.quick{
+    text-align: center;
+    margin-left: 5rem;
+}
+.quick nav{
+    width: 80%;
+    min-height: 10vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 50px;
+    margin-left: 25rem;
+}
+#links ul li{
+    padding: 20px;
+    text-align: center;
+}
+.quick h1{
+    font-size: 40px;
+    text-align: center;
+}
+/*--------------------------footer section------------------*/
+.footer{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url(photo/rabo.png) ;
+    width: 100%;
+    min-height: 50vh;
+    margin: 10px auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+  
+  .foot{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 9rem;
+}
+  .about{
+    color: #fff;
+    padding-left: 1rem;
+}
+  .about h1{
+    font-size: 40px;
+}
+  .about p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+  span{
+    color: yellow;
+}
+  .logo img{
+    margin-top: 6rem;
+}
+  .logo .fab {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 2rem;
+    padding: 5px;
+}
+  .logo .fab:hover{
+   color: yellow;
+}
+  .ptr{
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+}
+  .ptr h1{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}  
+    
+    
+  .contact-input{
+    background: #fff;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: 1.7rem,1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    size: 3vh;
+    width: 300px;
+}
+  .btn{
+    font-size: 19px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  .btn:hover{
+    background: red ;
+    transition: 0.5s;
+}
+  .copyright{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 2rem;
+    font-weight:bolder ;
+}
